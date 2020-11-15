@@ -11,7 +11,12 @@ if (hatPrice == bootsPrice) {
 let totalPrice = hatPrice + bootsPrice
 console.log(`Total Price: ${totalPrice}`)
 
-let myVariable = 'Adam'
-console.log(`Type: ${typeof myVariable}`)
-myVariable = 100
-console.log(`Type: ${typeof myVariable}`)
+let myvariable = 'Adam'
+console.log(`Type: ${typeof myvariable}`)
+myvariable = 100
+console.log(`Type: ${typeof myvariable}`)
+
+let firstCity
+// if firstCity is null or undefined, then the secondCity will fallback to "Hanoi"
+let secondCity = firstCity || 'Hanoi'
+console.log(`City: ${secondCity}`)
