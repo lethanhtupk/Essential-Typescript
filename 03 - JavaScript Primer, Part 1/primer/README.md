@@ -10,3 +10,12 @@
 6. symbol: used to represent unique constant values, such as **keys** in collections.
 
 > In JavaScript, values have types, not variables.
+
+## Strict mode
+
+When you enable "strict mode" mean you disable or restrict features that have historically caused poor-quality software.
+Eg. The default value for **this** keyword is **undefined** to prevent accident use of the **global** object.
+
+- **Note**: The TypeScript compiler provides a feature for automatically enabling strict mode in Javascript code it generates.
+
+
