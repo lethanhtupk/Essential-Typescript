@@ -1,18 +1,16 @@
 {
-  "name": "primer",
+  "name": "types",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc-watch --onsuccess \"node dist/index.js\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "nodemon": "^2.0.6"
-  },
   "devDependencies": {
-    "babel-minify": "^0.5.1"
+    "tsc-watch": "^2.1.2",
+    "typescript": "^3.5.1"
   }
 }

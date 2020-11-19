@@ -15,3 +15,10 @@
 ## Understanding Javascript Object inheritance
 
 JavaScript objects have a link to another object, known as _prototype_, where they inherit properties and methods.
+
+## Strict mode
+
+When you enable "strict mode" mean you disable or restrict features that have historically caused poor-quality software.
+Eg. The default value for **this** keyword is **undefined** to prevent accident use of the **global** object.
+
+- **Note**: The TypeScript compiler provides a feature for automatically enabling strict mode in Javascript code it generates.
