@@ -1,9 +1,18 @@
-function calculateTax(amount, discount?) {
-  return amount * 1.2 - (discount || 0)
+function calculateTax(amount, discount = 0, ...extraFees: number[]): number {
+  return amount * 1.2 - discount + extraFees.reduce((total, val) => total + val, 0)
 }
 
-let taxValue = calculateTax(100, 0)
-console.log(`Total Amount: ${taxValue}`)
+function writeValue(label: string, value: number): void {
+  console.log(`${label}: ${value}`)
+}
 
-let taxValue1 = calculateTax(100)
-console.log(`Total Amount: ${taxValue1}`)
+// let taxValue = calculateTax(100, 0)
+// console.log(`Total Amount: ${taxValue}`)
+
+// let taxValue1 = calculateTax(100)
+// console.log(`Total Amount: ${taxValue1}`)
+
+// let taxValue = calculateTax(100, 0)
+// console.log(`Tax value: ${taxValue}`)
+
+writeValue('Tax value', calculateTax(100, 0))
